@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%; /* Adjust gap between items */
+    background-color: #333; /* Dark gray background */
+    height: 100vh; /* Set height to fill the viewport */
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Heebo", sans-serif;
+    font-size: 4em; /* Increased font size for larger emojis */
+    background-color: #4e4c4c; /* Medium gray for icon background */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 5px; /* Add border-radius for rounded corners */
+}
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .grid-item {
+        font-size: 6vw; /* Adjust font size for smaller screens */
+    }}
